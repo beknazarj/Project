@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Data</title>
+  <meta charset="UTF-8">
+  <link href="site.css" rel="stylesheet">
+</head>
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+
+<body>
+
+<div id="main">
+<h1>Data</h1>
+
+<table style="width:100%">
+   <tr>
+    <h2>What is a Margin of Error?</h2>
+    <p>A margin of error tells you how many percentage points your results will differ from the real population value. For example, a 95% confidence interval with a 4 percent margin of error means that your statistic will be within 4 percentage points of the real population value 95% of the time.
+        More technically, the margin of error is the range of values below and above the sample statistic in a confidence interval. The confidence interval is a way to show what the uncertainty is with a certain statistic (i.e. from a poll or survey).
+        For example, a poll might state that there is a 98% confidence interval of 4.88 and 5.26. That means if the poll is repeated using the same techniques, 98% of the time the true population parameter (parameter vs. statistic) will fall within the interval estimates (i.e. between 4.88 and 5.26) 98% of the time.
+    </p>
+    <h2>Statistics Aren’t Always Right!</h3>
+    <p>The idea behind confidence levels and margins of error is that any survey or poll will differ from the true population by a certain amount. However, confidence intervals and margins of error reflect the fact that there is room for error, so although 95% or 98% confidence with a 2 percent Margin of Error might sound like a very good statistic, room for error is built in, which means sometimes statistics are wrong. For example, a Gallup poll in 2012 (incorrectly) stated that Romney would win the 2012 election with Romney at 49% and Obama at 48%. The stated confidence level was 95% with a margin of error of +/- 2, which means that the results were calculated to be accurate to within 2 percentages points 95% of the time.
+       The real results from the election were: Obama 51%, Romney 47%, which was actually even outside the range of the Gallup poll’s margin of error (2 percent), showing that not only can statistics be wrong, but polls can be too.
+    </p>
+    <img src = "beka.jpg">
+    <h2>How to Calculate Margin of Error</h4>
+    <p>Watch the video or read the steps below:</p>
+    <iframe height="480" width="500"  
+    src="https://youtu.be/MV_BwPHWGh8"> 
+    </iframe> 
+    <p>The margin of error tells you the range of values above and below a confidence interval.
+
+        A poll might report that a certain candidate is going to win an election with 51 percent of the vote; The confidence level is 95 percent and the error is 4 percent. Let’s say the poll was repeated using the same techniques. The pollsters would expect the results to be within 4 percent of the stated result (51 percent) 95 percent of the time. In other words, 95 percent of the time they would expect the results to be between:
+        •	51 – 4 = 47 percent and
+        •	51 + 4 = 55 percent.
+        The margin of error can be calculated in two ways, depending on whether you have parameters from a population or statistics from a sample:
+        1.	Margin of error = Critical value x Standard deviation for the population.
+        2.	Margin of error = Critical value x Standard error of the sample.
+        </p>
+    <h2>How to Calculate Margin of Error: Steps</h5>
+    <p>Step 1: Find the critical value. The critical value is either a t-score or a z-score. If you aren’t sure, see: T-score vs z-score. In general, for small sample sizes (under 30) or when you don’t know the population standard deviation, use a t-score. Otherwise, use a z-score.
+        Click here for a minute video that shows you how to find a critical value.
+        Step 2: Find the Standard Deviation or the Standard Error. These are essentially the same thing, only you must know your population parameters in order to calculate standard deviation. Otherwise, calculate the standard error (see: What is the Standard Error?).
+        Click here for a short video on how to calculate the standard error.
+        Step 3: Multiply the critical value from Step 1 by the standard deviation or standard error from Step 2. For example, if your CV is 1.95 and your SE is 0.019, then:
+        1.95 * 0.019 = 0.03705
+        Example question: 900 students were surveyed and had an average GPA of 2.7 with a standard deviation of 0.4. Calculate the margin of error for a 90% confidence level:
+        1.	The critical value is 1.645 (see this video for the calculation)
+        2.	The standard deviation is 0.4 (from the question), but as this is a sample, we need the standard error for the mean. The formula for the SE of the mean is standard deviation / √(sample size), so: 0.4 / √(900) = 0.013.
+        3.	1.645 * 0.013 = 0.021385
+        That’s how to calculate margin of error!
+        Back to Top
+        Second example: Click here to view a second video on YouTube showing calculations for a 95% and 99% Confidence Interval.
+        Tip: You can use the t-distribution calculator on this site to find the t-score and the variance and standard deviation calculator will calculate the standard deviation from a sample.
+        </p>
+    </tr>
+    <h2>Margin of Error for a Proportion</h6>
+    <p>The formula is a little different for proportions:
+ 
+
+
+        Where:
+        •	 = sample proportion (“P-hat”),
+        •	n = sample size,
+        •	z = z-score.
+        Example question: 1000 people were surveyed and 380 thought that climate change was not caused by human pollution. Find the MoE for a 90% confidence interval.
+        Step 1: Find P-hat by dividing the number of people who responded positively. “Positively” in this sense doesn’t mean that they gave a “Yes” answer; It means that they answered according to the statement in the question. In this case, 380/1000 people (38%) responded positively.
+        Step 2: Find the z-score that goes with the given confidence interval. You’ll need to reference this chart of common critical values. A 90% confidence interval has a z-score (a critical value) of 1.645.
+        Step 3: Insert the values into the formula and solve:
+         
+        
+        = 1.645 * 0.0153
+        = 0.0252
+        Step 4: Turn Step 3 into a percentage:
+        0.0252 = 2.52%
+        The margin of error is 2.52%.
+        
+        </p>
+    
+
+</table>
+
+<footer id="foot01"></footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
